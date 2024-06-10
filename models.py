@@ -4,7 +4,7 @@ from transformers import AutoModel, AutoTokenizer
 
 
 class TourEmbedding(nn.Module):
-    def __init__(self, model_card: str, emb_path="./location_embedding.pt"):
+    def __init__(self, model_card: str, emb_path="./location_embedding.pth"):
         super(TourEmbedding, self).__init__()
         self.location_embed = torch.load(emb_path)
         self.llm = AutoModel.from_pretrained(model_card)
