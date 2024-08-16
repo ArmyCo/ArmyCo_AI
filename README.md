@@ -1,4 +1,4 @@
-# ArmyCo_AI
+# ReCo_AI
 
 **requirements**
 * torch=2.2.2+cu121
